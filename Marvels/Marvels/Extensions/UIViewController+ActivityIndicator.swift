@@ -8,20 +8,22 @@
 import Foundation
 import UIKit
 
+let activityIndicator = UIActivityIndicatorView.init(style: .large)
+
 extension UIViewController {
     
     func startActivityIndicator() {
-        let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView.init(style: .large)
-        activityIndicator.tag = 9999
+//        let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView.init(style: .large)
+//        activityIndicator.tag = 9999
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         activityIndicator.center = self.view.center
     }
     
     func stopActivityIndicator() {
-        if let activityIndicator = self.view.subviews.filter({$0.tag == 9999}).first as? UIActivityIndicatorView {
+//        if let activityIndicator = self.view.subviews.filter({$0.tag == 9999}).first as? UIActivityIndicatorView {
             activityIndicator.stopAnimating()
             activityIndicator.removeFromSuperview()
-        }
+//        }
     }
 }
