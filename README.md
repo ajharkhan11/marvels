@@ -33,14 +33,6 @@ This app has been developed using a simple MVVM architectural pattern. MVVM (Mod
 This app has a bunch of unit tests. The networking model, as well as the models and authentication logic has been tested thoroughly. The code coverage is not 100% as it contains the unit test cases only.
 
 
-## Download and run
-
-- **Clone**: First, clone the repository with the 'clone' command.
-
-```
-$ git clone git@github.com:AnuragMehtaCG/Marvels.git
-```
-
 - **Marvel API keys**: Set your Marvel API keys as environment variables. Go to schemes, Marvel, and select Edit Scheme. Then, insert the environment variables into Run option -> Arguments -> Environment Variables.
 <p align="center">
 <img src="./Images/HowToEditScheme.png"> <img src="./Images/HowToEnterAPIKeys.png"> 
